@@ -1,0 +1,248 @@
+/*Start Global rules*/
+body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+:root{
+    --main_color :#2196f3 ;
+    --main_color_alt :#1787e0 ;
+    --margins : 60px
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 0.5);
+    z-index: 1;
+}
+
+
+
+
+@media (min-width : 768px){
+    .container{
+        width: 750px;
+    }
+}
+
+@media (min-width : 992px){
+    .container{
+        width: 1970px;
+    }
+}
+
+@media (min-width : 1200px){
+    .container{
+        width: 1170px;
+    }
+}
+
+
+/*End Global rules*/
+
+
+
+/*demo info*/
+.demo-info{
+    display: flex;
+    height: 112vh;
+
+}
+
+.demo-info .text-info{
+    width: 50%;
+    background-color: #2196f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+
+.demo-info .text-info .text{
+    color: white;
+    
+}
+
+
+.demo-info .text-info .text h3{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+.demo-info .text-info .text ul li{
+    display: flex;
+    align-items: center;
+}
+
+.demo-info .text-info .text ul li i{
+    margin-right: 10px;
+}
+.demo-info .text-info .text ul li p{
+    margin: 0;
+    font-size: 13px;
+}
+.back-home{
+    margin-top: 40px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-home i{
+    font-size: 10px;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.back-home p{
+    margin: 0;
+}
+
+/*End demo info*/
+
+/*Start Contact*/
+
+.contact{
+    width: 50%;
+    background-color: #ddd;
+    padding: 1rem;
+}
+
+.contact form{
+    position: relative;
+}
+
+.contact form p{
+    margin: 0;
+    display: block;
+    font-size: 13px;
+}
+.contact form p span{
+   color: red;
+}
+
+.contact form .name{
+    display: flex;
+    gap: 10px;
+}
+
+.contact form input[type ="text"],
+.contact form input[type ="number"]{
+    padding: 5px 7px;
+    width: 292px;
+    outline: none;
+    margin-bottom: 1rem;
+   
+}
+
+.contact form button{
+    display: block;
+    position: absolute;
+    bottom: -50px;
+    padding: 10px 30px;
+    background-color: #2196f3;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 17px;
+    border-radius: 4px;
+}
+/*End Contact*/
+
+/*Start Trust*/
+.trusted{
+    margin-top: 90px;
+}
+
+.trusted .text{
+    text-align: center;
+    position: relative;
+}
+
+.trusted .text h3{
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 10px
+}
+
+.trusted .text h3 span{
+    color: #2196f3;
+}
+
+.trusted .text h3+p{
+    font-size: 15px;
+    color: #777;
+}
+
+.trusted .links{
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.trusted .links img{
+    width: 100%;
+}
+
+/*End Trust*/
+
+@media (max-width :424px){
+    .trusted .text h3 {
+        font-size: 26px;
+    }
+    .trusted button{
+        font-size: 18px;
+    }
+
+    .demo-info{
+        flex-direction: column;
+        height: 100%;
+    }
+    .demo-info .text-info ,
+    .demo-info .contact{
+        width: 100%;
+        padding: 30px;
+    }
+
+    .demo-info .contact .name input[type = "text"]{
+        width: 100%;
+    }
+
+    form{
+        height: 586px;
+    }
+
+    .contact form button{
+        bottom: 0;
+    }
+}

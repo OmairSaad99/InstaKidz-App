@@ -1,0 +1,249 @@
+/*Start Global rules*/
+body{
+  
+    font-family: 'Cairo', sans-serif;
+}
+
+:root{
+    --main_color :#2196f3 ;
+    --main_color_alt :#1787e0 ;
+    --margins : 60px
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 0.2);
+    z-index: -1;
+}
+
+
+@media (min-width : 768px){
+    .container{
+        width: 750px;
+    }
+}
+
+@media (min-width : 992px){
+    .container{
+        width: 1970px;
+    }
+}
+
+@media (min-width : 1200px){
+    .container{
+        width: 1170px;
+    }
+}
+
+/*End Global Rules*/
+
+
+/*start Log In*/
+
+body{
+    display: flex;
+    background-color: #3e8bf2;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-bottom: 50px;
+
+}
+body .box{
+    position: relative;
+}
+
+.box .logo{
+    width: 150px;
+    height: 150px;  
+    mix-blend-mode: screen;
+}
+
+.box .logo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+
+.card{
+    width: 830px;
+    height: 380px;
+    margin-top: -14px;
+    border-radius:17px;
+    background-color :#e6f2ff;
+    position: relative;
+    box-shadow: 0 2px 15px rgb(0 0 0 / 25%);
+
+}
+
+.card .image{
+    position: absolute;
+    top: 50%;
+    left: 9%;
+    transform: translateY(-50%);
+    width: 312px;
+    height: 312px;
+}
+
+ .card .image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+form{
+    position: absolute;
+    width: 354px;
+    height: 448px;
+    right: 49px;
+    top: 63%;
+    transform: translateY(-50%);
+    display: flex;
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 10px;
+    z-index: 100;
+    box-shadow: 0 2px 15px rgb(0 0 0 / 40%);
+   
+}
+
+form fieldset{
+    padding: 0;
+    width: 100%;
+}
+
+form fieldset h3,
+form fieldset p{
+    color: #2d4b68;
+    margin-bottom: 25px;
+}
+
+form fieldset p{
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+
+}
+
+form input[type = "text"],
+form input[type = "password"]{
+    width: 100%;
+    height: 40px;
+    box-shadow: 0 4px 8px rgba(44, 39, 56, .0392156862745098);
+    border-radius: 5px;
+    border: 1px solid #eef0f4;
+    box-sizing: border-box;
+    padding: 0 15px;
+    color: #2d4b68;
+    outline: none;
+}
+
+form input[type = "text"]{
+    margin-bottom: 30px;
+}
+
+form fieldset .forgot-pass{
+    margin-top: 10px;
+    text-align: end;
+    font-size: 12px;
+    color: #1782fb;
+    cursor: pointer;
+}
+
+form fieldset button{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50px;
+    width: calc(100% - 96px);
+    padding: 8px 0 8px;
+    background-color: #3e8bf2;
+    color: white;
+    opacity: 0.8;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+form fieldset button+p{
+    position: absolute;
+    bottom: 45px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 209px;
+    margin: 0;
+}
+
+span{
+    color: #1782fb;
+    cursor: pointer;
+}
+
+@media (max-width :424px){
+   
+    body{
+        padding: 0;
+    }
+
+    .box{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    .card {
+        display: none;
+    }
+
+    .box form{
+        position: absolute;
+        left: 6%;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        background-color: #fff;
+        padding: 3rem;
+        border-radius: 10px;
+        z-index: 100;
+        width: 88%;
+    }
+
+    .box .image{
+        position: absolute;
+        top: 24px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+ 
+}
+/*End Log in*/
